@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = ItemsViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List {
+            ForEach(viewModel.items.indices, id: \.self) { index in
+                Section(header: Text("Item \(index) Description \(viewModel.items[index].config.option)")) {
+                    HStack {
+                        Picker(selection: $viewModel.items[index].config.option, label: Text("Option")) {
+                            Text("0").tag(0)
+                            Text("1").tag(1)
+                            Text("2").tag(2)
+                        }.pickerStyle(SegmentedPickerStyle())
+
+                        Toggle("", isOn: $viewModel.items[index].config.toggle)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()

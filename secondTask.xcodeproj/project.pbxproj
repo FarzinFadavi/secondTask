@@ -11,6 +11,10 @@
 		A57B37D32B56B38700D1C2BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B37D22B56B38700D1C2BB /* ContentView.swift */; };
 		A57B37D52B56B38900D1C2BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57B37D42B56B38900D1C2BB /* Assets.xcassets */; };
 		A57B37D82B56B38900D1C2BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57B37D72B56B38900D1C2BB /* Preview Assets.xcassets */; };
+		A57B37E02B56BD9200D1C2BB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B37DF2B56BD9200D1C2BB /* Item.swift */; };
+		A57B37E22B56BDAB00D1C2BB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B37E12B56BDAB00D1C2BB /* Config.swift */; };
+		A57B37E42B56BDC400D1C2BB /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B37E32B56BDC400D1C2BB /* ItemsViewModel.swift */; };
+		A57B37E82B56BE1D00D1C2BB /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B37E72B56BE1D00D1C2BB /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		A57B37D22B56B38700D1C2BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A57B37D42B56B38900D1C2BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57B37D72B56B38900D1C2BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A57B37DF2B56BD9200D1C2BB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A57B37E12B56BDAB00D1C2BB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A57B37E32B56BDC400D1C2BB /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
+		A57B37E72B56BE1D00D1C2BB /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,9 @@
 			children = (
 				A57B37D02B56B38700D1C2BB /* secondTaskApp.swift */,
 				A57B37D22B56B38700D1C2BB /* ContentView.swift */,
+				A57B37E52B56BDD300D1C2BB /* ViewModel */,
+				A57B37DE2B56BB0600D1C2BB /* Model */,
+				A57B37E62B56BE0600D1C2BB /* Extensions */,
 				A57B37D42B56B38900D1C2BB /* Assets.xcassets */,
 				A57B37D62B56B38900D1C2BB /* Preview Content */,
 			);
@@ -65,6 +76,31 @@
 				A57B37D72B56B38900D1C2BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A57B37DE2B56BB0600D1C2BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A57B37DF2B56BD9200D1C2BB /* Item.swift */,
+				A57B37E12B56BDAB00D1C2BB /* Config.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A57B37E52B56BDD300D1C2BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A57B37E32B56BDC400D1C2BB /* ItemsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A57B37E62B56BE0600D1C2BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A57B37E72B56BE1D00D1C2BB /* extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57B37E42B56BDC400D1C2BB /* ItemsViewModel.swift in Sources */,
 				A57B37D32B56B38700D1C2BB /* ContentView.swift in Sources */,
+				A57B37E22B56BDAB00D1C2BB /* Config.swift in Sources */,
+				A57B37E02B56BD9200D1C2BB /* Item.swift in Sources */,
 				A57B37D12B56B38700D1C2BB /* secondTaskApp.swift in Sources */,
+				A57B37E82B56BE1D00D1C2BB /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

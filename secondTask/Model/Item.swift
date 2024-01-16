@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Item: Codable, Identifiable {
+    var id: UUID = UUID()
+    var config: Config
+}
